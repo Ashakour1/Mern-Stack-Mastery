@@ -14,4 +14,4 @@ const goalsSchema = mongoose.Schema({
 
 // console.log(goalsSchema);
 
-module.exports = mongoose.model('goals', goalsSchema)
+module.exports = mongoose.model('Goal', goalsSchema)
