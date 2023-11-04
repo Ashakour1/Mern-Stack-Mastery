@@ -17,12 +17,12 @@ router.route("/:id").put(updateGoals).delete(deleteGoals);
 
 
 
-router.get("/", getGoals);
+// router.get("/", getGoals);
 
-router.post("/", setGoals);
+// router.post("/", setGoals);
 
-router.put("/:id", updateGoals);
+// router.put("/:id", updateGoals);
 
-router.delete("/:id", deleteGoals);
+// router.delete("/:id", deleteGoals);
 
 module.exports = router;

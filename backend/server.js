@@ -2,12 +2,15 @@ const express = require("express");
 const dotenv = require("dotenv")
 const colors = require("colors");
 const connectDB = require("./config/db");
+
+
 dotenv.config();
+
 
 
 connectDB();
 
-const {errorHandler} = require("./middleware/errorMiddle")
+const {errorHandler} = require("./middleware/errorMiddleware")
 
 
 // console.log(process.env.NODE_ENV);
@@ -19,6 +22,7 @@ App.use(express.json());
 App.use(express.urlencoded({ extended: false }));
 
 App.use("/api/goals", require("./routes/goalsroutes"));
+App.use("/api/users", require("./routes/userRoutes"));
 
 App.use(errorHandler);
 
