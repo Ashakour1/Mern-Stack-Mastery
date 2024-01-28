@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "error": "nodemon backend/middleware/authMiddleware.js"
+    "error": "nodemon backend/middleware/authMiddleware.js",
+    "dev" : "npm start --prefix frontend"
   },
   "author": "abdi",
   "license": "MIT",
